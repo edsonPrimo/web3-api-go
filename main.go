@@ -10,11 +10,12 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+	"web3-with-go/pkg/config"
 	"web3-with-go/pkg/routers"
 )
 
 func Initialize() {
-
+	config.GlobalConfig.Init()
 }
 
 // @title Go Lang API + Web3
