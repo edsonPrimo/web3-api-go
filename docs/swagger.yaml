@@ -1,0 +1,27 @@
+basePath: /api/v1
+info:
+  contact:
+    name: Edson
+  termsOfService: http://swagger.io/terms/
+  title: Go Lang API + Web3
+  version: "1.0"
+paths:
+  /current-block:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: ' '
+        in: query
+        name: protocol
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: Get current block of a blackchain
+      tags:
+      - block
+swagger: "2.0"
