@@ -10,8 +10,8 @@
   <h2>API Endpoints</h2>
   <p>This API has the following endpoints:</p>
   <ul>
-    <li><code>GET /api/balance/{address}</code>: Get the balance of an Ethereum address.</li>
-    <li><code>GET /api/transaction/{hash}</code>: Get the details of an Ethereum transaction.</li>
+    <li><code>GET /api/v1/current-block</code>: Get the current block number of a blockchain.</li>
+
   </ul>
 </body>
 </html>
