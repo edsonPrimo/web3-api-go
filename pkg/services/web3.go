@@ -2,6 +2,7 @@ package services
 
 import (
 	"errors"
+	"web3-with-go/pkg/config"
 	httperrors "web3-with-go/pkg/http/errors"
 
 	"github.com/chenzhijie/go-web3"
@@ -9,8 +10,8 @@ import (
 
 func getNode(protocol string) (*web3.Web3, error) {
 	rpcs := map[string]string{
-		"ETHEREUM": "",
-		"BSC":      "",
+		"ETHEREUM": config.GlobalConfig.Eth_Node,
+		"BSC":      config.GlobalConfig.Eth_Node,
 	}
 	rpcProviderUrl := rpcs[protocol]
 	if rpcProviderUrl == "" {
